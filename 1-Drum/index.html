@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Drum</title>
+</head>
+<body>
+  <h1 class="title">Drum</h1>
+  <h2 class="subtitle">Press The Keys</h2>
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>a</kbd>
+      <span>clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>s</kbd>
+      <span>hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>d</kbd>
+      <span>kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>f</kbd>
+      <span>openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>g</kbd>
+      <span>boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>h</kbd>
+      <span>ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>j</kbd>
+      <span>snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>k</kbd>
+      <span>tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>l</kbd>
+      <span>tink</span>
+    </div>
+  </div>
+  <audio src="sounds/boom.wav" class="audio" data-key="65"></audio>
+  <audio src="sounds/clap.wav" class="audio" data-key="83"></audio>
+  <audio src="sounds/hihat.wav" class="audio" data-key="68"></audio>
+  <audio src="sounds/kick.wav" class="audio" data-key="70"></audio>
+  <audio src="sounds/openhat.wav"class="audio" data-key="71"></audio>
+  <audio src="sounds/ride.wav" class="audio" data-key="72"></audio>
+  <audio src="sounds/snare.wav"class="audio" data-key="74"></audio>
+  <audio src="sounds/tink.wav" class="audio" data-key="75"></audio>
+  <audio src="sounds/tom.wav"class="audio" data-key="76"></audio>
+
+  <footer class="footer">
+    Developed by <a href="https://crisgon.github.io" target="_blank">Cristiano</a> in
+    <a href="https://javascript30.com" target="_blank">Javascript30</a> challenge.
+  </footer>
+</body>
+<script src="drum.js"></script>
+</html>

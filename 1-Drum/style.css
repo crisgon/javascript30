@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+body {
+  background-color: #2C3A47;
+  font-family: 'Arimo', sans-serif;
+  color: #fff;
+}
+
+a {
+  color: #55E6C1;
+}
+
+.title {
+  text-align: center;
+  font-size: 4em;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.keys {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.key {
+  width: 100px;
+  height: 100px;
+  margin-bottom: .5em;
+  background-color: #1B9CFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.key span {
+  font-size: .5em;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.playing {
+  transform: scale(1.15);
+  background-color: #55E6C1;
+}
+
+.footer {
+  width: 500px;
+  position: absolute;
+  bottom: 10px; 
+  left: calc(50% - 250px);
+  text-align: center;
+}
+
