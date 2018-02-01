@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html {
+  background-color: #ff3838;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display:flex;
+  flex:1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+a {
+  color: #fff;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 4em;
+  text-transform: capitalize;
+  position: absolute;
+  top: -15px;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 10px solid rgba(0,0,0,.5);
+  border-radius:50%;
+  margin:50px auto;
+  position: relative;
+  padding:2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+
+
+
+/* Digital Clock */
+
+.digital-clock {
+  width: 400px;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 200px);
+  display: flex;
+  justify-content: space-around;
+  font-size: 4em;
+  color: #fff;
+}
+
+/* Footer  */
+.footer {
+  width: 500px;
+  position: absolute;
+  bottom: 10px; 
+  left: calc(50% - 250px);
+  text-align: center;
+}
+
