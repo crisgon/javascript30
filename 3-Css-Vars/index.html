@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Edit the <span class='hl'>image!</span></h2>
+<section class="container">
+  <div class="controls">
+
+    <label for="opacity">Opacity:
+      <input type="range" name="opacity" min="0" max="1" value="1" step=".1">
+    </label>
+
+    <label for="spacing">Border:
+      <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    </label>
+
+    <label for="blur">Blur:
+      <input id="blur" type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
+    </label>
+
+    <label for="blur">Radius:
+      <input id="blur" type="range" name="radius" min="0" max="100" value="5" data-sizing="%">
+    </label>
+
+    <label for="base">Color: 
+      <input id="base" type="color" name="base" value="#ffc600">
+    </label>
+  </div>
+
+  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+</section>
+
+
+  <script src="css.js"></script>
+
+</body>
+</html>
