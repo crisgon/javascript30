@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #2d3436;
+      font-family: 'Pacifico', cursive;
+    }
+    canvas {
+      background-color: #fff;
+    }
+
+    .controls {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      color: #fff;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      border: 0;
+      margin-left: .5em;
+    }
+    
+    button {
+      border: 0;
+      padding: .7em 1.5em;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="controls">
+    <h1>Lets Draw</h1>
+    <label>Color
+      <input type="color" class="color">
+    </label>
+    <label>Size
+      <input type="range" class="size" value="10" max="100">
+    </label>
+    <button class="clear">Clear</button>
+  </nav>
+<canvas id="draw" width="800" height="800"></canvas>
+<script src="canvas.js"></script>
+</body>
+</html>
