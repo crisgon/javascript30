@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+<script>
+
+  const arrayPress = [];
+  const secretCode = 'cris';
+
+  window.addEventListener('keyup', (event) => {
+    arrayPress.push(event.key);
+    console.log(arrayPress);
+    if(arrayPress.join('').includes(secretCode)){
+      document.querySelector('body').style.background = '#2c3e50';
+      cornify_add();
+      arrayPress.splice(0);
+    }
+  });
+
+</script>
+</body>
+</html>
