@@ -52,6 +52,7 @@
           clearInterval(time);
           storeScore(score);
           showScore(storage);
+          name.value = '';
         };
         count--;
       }, 1000)
